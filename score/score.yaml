@@ -1,0 +1,28 @@
+expConst: 9
+impactConst: 4
+attackVector:
+  remote: 0.85
+  local: 0.55
+exploitability:
+  high: 0.54
+  moderate: 0.4
+  low: 0.1
+  veryLow: 0.05
+scopeFactor:
+  none: 0.25
+  host: 1
+  cluster: 1
+ciaScore:
+  high: 0.56
+  low: 0.22
+  none: 0
+riskCategory:
+  min: 0
+  low: 3
+  medium: 7
+  max: 10
+individualRiskCategory:
+  min: 0
+  low: 2
+  medium: 5
+  max: 10

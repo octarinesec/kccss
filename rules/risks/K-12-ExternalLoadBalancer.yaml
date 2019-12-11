@@ -1,0 +1,30 @@
+name: "ExternalLoadBalancer"
+type: "risk"
+id: "K-12"
+revision: 1
+category: "Network"
+rule: ""
+title: "Workload is exposed through an external load balancer"
+description: "An external load balancer is exposing the workload, making it accessible from other networks and the Internet."
+confidentiality:
+  impact: "High"
+  description: "Accidental exposure of sensitive services may lead to the exfiltration of confidential data through remote code vulnerabilities, vulnerable third-party libraries or vulnerable OS services."
+integrity: 
+  impact: "Low"
+  description: "Services open to the Internet may be used to access unprotected services (move laterally) by leveraging remote code vulnerabilities, vulnerable third-party libraries or vulnerable OS services."
+availability: 
+  impact: "High"
+  description: "Accidental exposure to the Internet can make the workload susceptible to DoS attacks from random attackers."
+exploitability: 
+  impact: "Moderate"
+  description: ""
+attackVector: 
+  impact: "Remote"
+  description: ""
+scope: 
+  impact: "None"
+  description: ""
+vector: ""
+baseScore: ""
+exploitabilityScore : ""
+impactScore : ""

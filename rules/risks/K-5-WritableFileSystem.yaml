@@ -1,0 +1,30 @@
+name: "WritableFileSystem"
+type: "risk"
+id: "K-5"
+revision: 1
+category: "Container"
+rule: ""
+title: "Workload has a container(s) with writable file system"
+description: "A writable file system allows files within the  container to be changed.  This means a malicious process inside the container can use a writable file system to store or manipulate data inside the container."
+confidentiality:
+  impact: "None"
+  description: ""
+integrity: 
+  impact: "Low"
+  description: "This allows malicious processes to write data to disk, making it easier to drop and execute external malicious code."
+availability: 
+  impact: "None"
+  description: ""
+exploitability: 
+  impact: "Moderate"
+  description: ""
+attackVector: 
+  impact: "Local"
+  description: ""
+scope: 
+  impact: "None"
+  description: ""
+vector: ""
+baseScore: ""
+exploitabilityScore : ""
+impactScore : ""

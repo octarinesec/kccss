@@ -1,0 +1,21 @@
+name: "Encryption"
+type: "remediation"
+id: "R-Octarine-1"
+revision: 1
+category: "Network"
+rule: ""
+title: "Octarine Encryption enabled"
+shortDescription: "Workload's internal tnetwork traffic is encrypted'"
+description: "The Octarine service mesh encrypts all internal network activities with a mutual TLS connection and uses certificates to provide strong identity to all workloads, which greatly reduces the potential attack surface."
+confidentiality: 
+  impact: "High"
+  description: "Service meshes, such as Octarine, provide encryption of network traffic, as well as strong identity, which prevents network sniffing and Man-in-the-Middle (MiTM) attacks."
+integrity:
+  impact: "Low"
+  description: "The strong identity provided by an Octarine service mesh prevents rogue containers from impersonating trusted workloads."
+availability: 
+  impact: "None"
+  description: ""
+attackVector: "Remote"
+scope: "None"
+vector: ""

@@ -1,0 +1,30 @@
+name: "CPUMemoryQuota"
+type: "risk"
+id: "K-8"
+revision: 1
+category: "Workload"
+rule: ""
+title: "Workload has a container which its CPU or Memory limit was not configured"
+description: "CPU and Memory quotas prevent container from grabbing too many resources from the node, and allow a better scheduling of resources across the cluster."
+confidentiality:
+  impact: "None"
+  description: ""
+integrity: 
+  impact: ""
+  description: "None"
+availability: 
+  impact: "High"
+  description: "Workloads with no CPU or memory quota may starve off other workloads on the node, resulting in pod ejections and cascading reschedule of pods on other nodes."
+exploitability: 
+  impact: "Moderate"
+  description: ""
+attackVector: 
+  impact: "Local"
+  description: ""
+scope: 
+  impact: "Host"
+  description: ""
+vector: ""
+baseScore: ""
+exploitabilityScore : ""
+impactScore : ""

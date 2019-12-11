@@ -1,0 +1,30 @@
+name: "HostPathRO"
+type: "risk"
+id: "K-10"
+revision: 1
+category: "Workload"
+rule: ""
+title: "Workload is mounting a volume with OS Directory read-only permissions"
+description: "Containers can mount sensitive folders from the hosts, giving them potentially dangerous access to critical host configurations and binaries."
+confidentiality:
+  impact: "High"
+  description: "Containers can mount sensitive folders from the hosts, giving them potential dangerous knowledge of critical host configurations."
+integrity: 
+  impact: "None"
+  description: ""
+availability: 
+  impact: "None"
+  description: ""
+exploitability: 
+  impact: "Low"
+  description: ""
+attackVector: 
+  impact: "Local"
+  description: ""
+scope: 
+  impact: "Host"
+  description: ""
+vector: ""
+baseScore: ""
+exploitabilityScore : ""
+impactScore : ""

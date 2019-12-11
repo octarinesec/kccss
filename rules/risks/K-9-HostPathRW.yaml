@@ -1,0 +1,30 @@
+name: "CPUMemoryQuota"
+type: "risk"
+id: "K-8"
+revision: 1
+category: "Workload"
+rule: ""
+title: "Workload is mounting a volume with OS Directory write permissions"
+description: "Containers can mount sensitive folders from the hosts, giving them potentially dangerous access to critical host configurations and binaries."
+confidentiality:
+  impact: "High"
+  description: "Sharing sensitive folders and files such as / (root), /var/run/, etc., can allow the container to communicate with other host applications, such as a database, which could expose sensitive information."
+integrity: 
+  impact: "High"
+  description: "Sharing sensitive folders and files, such as / (root), /var/run/, docker.sock, etc. can allow the container to reconfigure the Kubernetes clusters, run new container images, etc."
+availability: 
+  impact: "Low"
+  description: "Sharing sensitive folders and files, such as / (root), /var/run/, docker.sock, etc. can allow the container to reconfigure the container quotas, run new container images, etc."
+exploitability: 
+  impact: "Moderate"
+  description: ""
+attackVector: 
+  impact: "Local"
+  description: ""
+scope: 
+  impact: "Host"
+  description: ""
+vector: ""
+baseScore: ""
+exploitabilityScore : ""
+impactScore : ""

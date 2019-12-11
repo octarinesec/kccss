@@ -1,0 +1,30 @@
+name: "SharedHostPort"
+type: "risk"
+id: "K-15"
+revision: 1
+category: "Network"
+rule: ""
+title: "Workload is exposed through a shared host port"
+description: "This container setting binds the container listening port to the IP address of the host. This exposes the pod to adjacent networks and/or to the Internet.\nA host port is exposing the workload, making it accessible from other networks and the Internet."
+confidentiality:
+  impact: "High"
+  description: "This setting binds the workload listening IP address to the host IP, making the service accessible from other networks and/or from the Internet."
+integrity: 
+  impact: "Low"
+  description: "Services open to the Internet may be used to access unprotected services (move laterally) by leveraging remote code vulnerabilities, vulnerable third-party libraries or vulnerable OS services."
+availability: 
+  impact: "High"
+  description: "Accidental exposure to the Internet can make the workload susceptible to DoS attacks from random attackers."
+exploitability: 
+  impact: "Moderate"
+  description: ""
+attackVector: 
+  impact: "Remote"
+  description: ""
+scope: 
+  impact: "None"
+  description: ""
+vector: ""
+baseScore: ""
+exploitabilityScore : ""
+impactScore : ""

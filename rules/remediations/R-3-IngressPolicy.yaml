@@ -1,0 +1,21 @@
+name: "IngressPolicy"
+type: "remediation"
+id: "R-3"
+revision: 1
+category: "Network"
+rule: ""
+title: "Kuberentes Ingress Policy set"
+shortDescription: "Workload has ingress policy configured"
+description: "An ingress network policy can prevent a workload from being leveraged to perform lateral movement and data ex-filtration."
+confidentiality: 
+  impact: "High"
+  description: "An ingress policy cuts down on accidental exposure to the Internet, which can lead to confidential data being leaked. (Accidental exposure can be caused when a Load Balancer, Node Port or Ingress Controller is added or misconfigured."
+integrity:
+  impact: "Low"
+  description: "An ingress policy cuts down on accidental exposure to the Internet, which can make vulnerable code or third-party processes available to be exploited by external attackers."
+availability: 
+  impact: "Low"
+  description: "An ingress policy helps limit accidental exposure to the Internet, which can make workloads susceptible to DoS attacks from random attackers."
+attackVector: "Remote"
+scope: "None"
+vector: ""

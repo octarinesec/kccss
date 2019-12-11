@@ -1,0 +1,30 @@
+name: "ShareHostIPC"
+type: "risk"
+id: "K-18"
+revision: 1
+category: "Workload"
+rule: ""
+title: "Workload shares the host IPC"
+description: "IPC allows containers to communicate directly through shared memory - a shared IPC means that anyone in that namespace can access that memory."
+confidentiality:
+  impact: "High"
+  description: "Communication between trusted applications and untrusted applications (malicious third-party libraries, rogue containers) can leak confidential data."
+integrity: 
+  impact: "Low"
+  description: "Untrusted applications can change the behavior of trusted applications through shared memory namespaces by tampering with the memory."
+availability: 
+  impact: "Low"
+  description: "An untrusted application can use improper Inter-Process Communications to crash the destination process."
+exploitability: 
+  impact: "Low"
+  description: ""
+attackVector: 
+  impact: "Local"
+  description: ""
+scope: 
+  impact: "Host"
+  description: ""
+vector: ""
+baseScore: ""
+exploitabilityScore : ""
+impactScore : ""

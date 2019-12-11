@@ -1,0 +1,30 @@
+name: "ShareHostPID"
+type: "risk"
+id: "K-17"
+revision: 1
+category: "Workload"
+rule: ""
+title: "Workload shares the host PID"
+description: "Shared host PIDs enable the sharing of processes with the host and other containers."
+confidentiality:
+  impact: "Low"
+  description: "Each container has access to password, secrets, certificates, etc. read by other containers."
+integrity: 
+  impact: "Low"
+  description: "Each container can manipulate other container processes, inject malicious code, modify /proc, etc. A malicious container can move laterally by infecting other containers on the same host."
+availability: 
+  impact: "Low"
+  description: "Each container can crash another container’s processes."
+exploitability: 
+  impact: "Low"
+  description: ""
+attackVector: 
+  impact: "Local"
+  description: ""
+scope: 
+  impact: "Host"
+  description: ""
+vector: ""
+baseScore: ""
+exploitabilityScore : ""
+impactScore : ""

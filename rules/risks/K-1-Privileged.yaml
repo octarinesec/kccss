@@ -1,0 +1,30 @@
+name: "Privileged"
+type: "risk"
+id: "K-1"
+revision: 1
+category: "Workload"
+rule: ""
+title: "Workload is privileged"
+description: "Processes inside a privileged container will have full access to the host, which means any third-party library or malicious program can compromise the host. As a result,  the compromised host could be used to compromise the entire cluster. "
+confidentiality:
+  impact: "High"
+  description: "Privileged containers may have the option to read and modify any application, such as Docker, Kubernetes, etc."
+integrity: 
+  impact: "Low"
+  description: "Processes inside a privileged container get full access to the host. This means a malicious program or third-party library can compromise the host and the entire cluster."
+availability: 
+  impact: "Low"
+  description: "Processes inside a privileged container may have the ability to modify or stop Kubernetes, Docker and other applications."
+exploitability: 
+  impact: "Moderate"
+  description: ""
+attackVector: 
+  impact: "Local"
+  description: ""
+scope: 
+  impact: "Host"
+  description: ""
+vector: ""
+baseScore: ""
+exploitabilityScore : ""
+impactScore : ""

@@ -1,0 +1,30 @@
+name: "ShareHostNetwork"
+type: "risk"
+id: "K-15"
+revision: 1
+category: "Network"
+rule: "$.spec[?(@.hostNetwork == true)]"
+title: "Workload is exposed through a shared host network"
+description: "This Security Context setting allows the workload to share the same network namespace as the host."
+confidentiality:
+  impact: "High"
+  description: "This allows the network to listen to the loopback interface and sniff the traffic to and from other pods. This setting also allows workloads to bind their listening IP address to the host IP, making the service accessible from other networks and/or from the Internet."
+integrity: 
+  impact: "Low"
+  description: "Services open to the Internet may be used to access unprotected services (move laterally) by leveraging remote code vulnerabilities, vulnerable third-party libraries or vulnerable OS services."
+availability: 
+  impact: "High"
+  description: "Accidental exposure to the Internet can make the workload susceptible to DoS attacks from random attackers."
+exploitability: 
+  impact: "Moderate"
+  description: ""
+attackVector: 
+  impact: "Remote"
+  description: ""
+scope: 
+  impact: "Host"
+  description: ""
+vector: ""
+baseScore: ""
+exploitabilityScore : ""
+impactScore : ""

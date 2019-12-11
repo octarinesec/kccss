@@ -1,0 +1,30 @@
+name: "AllowPrivilegeEscalation"
+type: "risk"
+id: "K-3"
+revision: 1
+category: "Workload"
+rule: ""
+title: "Workload allows privilege escalation"
+description: "Privilege escalation allows programs inside the container to run as root, even if the main process is not root, which can give those programs control over that container, host and even cluster."
+confidentiality:
+  impact: "Low"
+  description: "Root processes that can escape the containers have the ability to read secrets from Kubernetes, Docker and other applications."
+integrity: 
+  impact: "Low"
+  description: "Processes in a container running as root may be able to escape their container and perform malicious actions on the host."
+availability: 
+  impact: "Low"
+  description: "Root processes that can escape the containers have the ability to modify or stop Kubernetes, Docker and other applications."
+exploitability: 
+  impact: "Very Low"
+  description: ""
+attackVector: 
+  impact: "Local"
+  description: ""
+scope: 
+  impact: "Host"
+  description: ""
+vector: ""
+baseScore: ""
+exploitabilityScore : ""
+impactScore : ""

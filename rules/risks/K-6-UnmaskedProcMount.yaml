@@ -1,0 +1,30 @@
+name: "UnmaskedProcMount"
+type: "risk"
+id: "K-6"
+revision: 1
+category: "Workload"
+rule: ""
+title: "Workload exposes unsafe parts of /proc"
+description: "A container with full access (unmasked) to the host’s /proc command is able to retrieve information about all the activities and users on that host. /proc/sys allows a privileged user to change the runtime kernel parameters and impact how resources are shared amongst containers."
+confidentiality:
+  impact: "Low"
+  description: "/proc contains information about all network connections on the host, the file systems and permissions, running processes, etc."
+integrity: 
+  impact: "None"
+  description: ""
+availability: 
+  impact: "High"
+  description: "/proc/sys allows a privileged user to change the runtime kernel parameters, which may impact how resources are shared amongst containers."
+exploitability: 
+  impact: "Moderate"
+  description: ""
+attackVector: 
+  impact: "Local"
+  description: ""
+scope: 
+  impact: "Host"
+  description: ""
+vector: ""
+baseScore: ""
+exploitabilityScore : ""
+impactScore : ""

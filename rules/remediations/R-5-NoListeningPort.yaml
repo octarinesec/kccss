@@ -17,5 +17,7 @@ availability:
   impact: "High"
   description: "When there is no listening port, workloads not accessible remotely are less likely to be overloaded by external users."
 attackVector: "Remote"
-scope: "None"
+scope: 
+  impact: "None"
+  category: "Network Lateral Movement"
 vector: ""

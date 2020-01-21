@@ -17,5 +17,7 @@ availability:
   impact: "Low"
   description: "An egress policy makes it more difficult for a workload to be leveraged to mount a DoS attack on other internal services in the cluster."
 attackVector: "Remote"
-scope: "Cluster"
+scope: 
+  impact: "Cluster"
+  category: "Network Lateral Movement"
 vector: ""

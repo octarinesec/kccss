@@ -23,6 +23,7 @@ attackVector:
   description: ""
 scope: 
   impact: "Host"
+  category: "Workload Isolation"
   description: ""
 vector: ""
 baseScore: ""

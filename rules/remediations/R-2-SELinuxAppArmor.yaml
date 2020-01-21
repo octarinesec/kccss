@@ -17,5 +17,7 @@ availability:
   impact: "High"
   description: "The SELinux or AppArmor policy can be used to restrict the system calls and prevent processes from grabbing additional CPU or memory resources."
 attackVector: "Local"
-scope: "Host"
+scope: 
+  impact: "Host"
+  category: "Workload Isolation"
 vector: ""

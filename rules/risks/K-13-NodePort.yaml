@@ -23,6 +23,7 @@ attackVector:
   description: ""
 scope: 
   impact: "None"
+  category: "Network Exposure"
   description: ""
 vector: ""
 baseScore: ""

@@ -5,7 +5,7 @@ revision: 1
 category: "Workload"
 rule: ""
 title: "Workload is privileged"
-description: "Processes inside a privileged container will have full access to the host, which means any third-party library or malicious program can compromise the host. As a result,  the compromised host could be used to compromise the entire cluster. "
+description: "Processes inside a privileged container will have full access to the host, which means any third-party library or malicious program can compromise the host. As a result,  the compromised host could be used to compromise the entire cluster."
 confidentiality:
   impact: "High"
   description: "Privileged containers may have the option to read and modify any application, such as Docker, Kubernetes, etc."

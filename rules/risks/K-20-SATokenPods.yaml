@@ -1,0 +1,31 @@
+name: "SATokenPods"
+type: "risk"
+id: "K-20"
+revision: 1
+category: "Workload"
+rule: ""
+title: "Workload mounts a Service Account Token with right to create/delete Pods"
+description: "The Service Account Token allows the workload to query the Kubernetes API server for a specific list of resources and actions. A Service Account Token with the right to create and delete Pods would give the ability to the workload to schedule new pods and stop current pods from running."
+confidentiality:
+  impact: "None"
+  description: ""
+integrity: 
+  impact: "High"
+  description: "The ability to create new pods and delete running pods alters the function of the namespace or cluster."
+availability: 
+  impact: "High"
+  description: "The creation of many new pods can exhaust the CPU and memory available to the cluster, the rescheduling of running pods, resulting in application downtime."
+exploitability: 
+  impact: "Very High"
+  description: ""
+attackVector: 
+  impact: "Local"
+  description: ""
+scope: 
+  impact: "Cluster"
+  category: "K8s Privilege Escalation"
+  description: ""
+vector: ""
+baseScore: ""
+exploitabilityScore : ""
+impactScore : ""

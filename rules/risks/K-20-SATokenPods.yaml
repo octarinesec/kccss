@@ -16,7 +16,7 @@ availability:
   impact: "High"
   description: "The creation of many new pods can exhaust the CPU and memory available to the cluster, the rescheduling of running pods, resulting in application downtime."
 exploitability: 
-  impact: "Very High"
+  impact: "High"
   description: ""
 attackVector: 
   impact: "Local"

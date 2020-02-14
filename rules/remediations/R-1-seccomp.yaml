@@ -16,7 +16,9 @@ integrity:
 availability: 
   impact: "High"
   description: "A seccomp policy can be used to restrict the system calls and prevent processes from grabbing additional CPU or memory resources."
-attackVector: "Local"
+attackVector:
+  impact: "Local"
+  description: ""
 scope: 
   impact: "Host"
   category: "Workload Isolation"

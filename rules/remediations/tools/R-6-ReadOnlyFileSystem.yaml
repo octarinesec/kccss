@@ -16,7 +16,9 @@ integrity:
 availability: 
   impact: "Very Low"
   description: "Donwloading and running tools to DoS other containers is harder."
-attackVector: "Local"
+attackVector:
+  impact: "Local"
+  description: ""
 scope: 
   impact: "None"
   category: "All"

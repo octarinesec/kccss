@@ -16,6 +16,8 @@ integrity:
 availability: 
   impact: "None"
   description: ""
-attackVector: "Remote"
+attackVector:
+  impact: "Remote"
+  description: ""
 scope: "None"
 vector: ""

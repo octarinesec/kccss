@@ -16,7 +16,9 @@ integrity:
 availability: 
   impact: "Low"
   description: "An ingress policy helps limit accidental exposure to the Internet, which can make workloads susceptible to DoS attacks from random attackers."
-attackVector: "Remote" 
+attackVector:
+  impact: "Remote"
+  description: ""
 scope: 
   impact: "None"
   category: "Network Exposure"

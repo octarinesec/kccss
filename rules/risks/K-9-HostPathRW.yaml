@@ -1,6 +1,6 @@
 name: "CPUMemoryQuota"
 type: "risk"
-id: "K-8"
+id: "K-9"
 revision: 1
 category: "Workload"
 rule: ""

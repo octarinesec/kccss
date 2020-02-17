@@ -8,10 +8,10 @@ title: "Read-only File System"
 shortDescription: "The file system is mounted as read-only."
 description: "Containers with read-only file system makes it harder for attackers to exploit a vulnerable container: additional external tools and scripts cannot be saved locally to be run alter."
 confidentiality: 
-  impact: "Very Low"
+  impact: "Low"
   description: "Downloading and running tools to gather secrets is harder."
 integrity:
-  impact: "Very Low"
+  impact: "Low"
   description: "Downloading and running tools to attack other containers is harder."
 availability: 
   impact: "Low"

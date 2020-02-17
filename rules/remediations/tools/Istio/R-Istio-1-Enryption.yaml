@@ -5,7 +5,7 @@ revision: 1
 category: "Network"
 rule: ""
 title: "Istio Encryption enabled"
-shortDescription: "Workload's internal tnetwork traffic is encrypted'"
+shortDescription: "Workload's internal network traffic is encrypted"
 description: "The Istio service mesh encrypts all internal network activities with a mutual TLS connection and uses certificates to provide strong identity to all workloads, which greatly reduces the potential attack surface."
 confidentiality: 
   impact: "High"

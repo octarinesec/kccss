@@ -4,7 +4,7 @@ id: "R-3"
 revision: 1
 category: "Network"
 rule: ""
-title: "Kuberentes Ingress Policy set"
+title: "Kubernetes Ingress Policy set"
 shortDescription: "Workload has ingress policy configured"
 description: "An ingress network policy can prevent a workload from being leveraged to perform lateral movement and data ex-filtration."
 confidentiality: 

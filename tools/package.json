@@ -1,0 +1,24 @@
+{
+  "name": "kccss",
+  "version": "1.0.0",
+  "description": "Tools for the Kubernetes Common Configuration Scoring System (KCCSS)",
+  "main": "index.js",
+  "dependencies": {
+    "commander": "^4.1.1",
+    "js-yaml": "^3.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octarinesec/kccss.git"
+  },
+  "author": "Julien Sobrier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/octarinesec/kccss/issues"
+  },
+  "homepage": "https://github.com/octarinesec/kccss#readme"
+}

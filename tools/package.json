@@ -4,12 +4,14 @@
   "description": "Tools for the Kubernetes Common Configuration Scoring System (KCCSS)",
   "main": "index.js",
   "dependencies": {
+    "@types/js-yaml": "^3.12.2",
+    "@types/node": "^13.7.1",
     "commander": "^4.1.1",
     "js-yaml": "^3.13.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",

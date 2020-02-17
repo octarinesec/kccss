@@ -1,30 +1,44 @@
-name: "Privileged"
-type: "risk"
-id: "Helm-1"
+name: Privileged
+type: risk
+id: Helm-1
 revision: 1
-category: "Workload"
-rule: ""
-title: "Tiller v2 is deployed"
-description: "Helm v2 includes a workload, Tiller, that is used to execute Helm charts. Tillers has no authentication enabled by default. Tiller can execute any command, such as granting new ClusterRoles rights to amy pod."
+category: ''
+rule: ''
+title: Tiller v2 is deployed
+description: >-
+  Helm v2 includes a workload, Tiller, that is used to execute Helm charts.
+  Tillers has no authentication enabled by default. Tiller can execute any
+  command, such as granting new ClusterRoles rights to amy pod.
+shortDescription: ''
+availability:
+  impact: High
+  description: >-
+    With the ability to escalte privileges, tiller can be used to grant pods the
+    ability to create and start many other pods.
 confidentiality:
-  impact: "High"
-  description: "By default, tiller v2 accepts unauthenticated gRPC connections in plain-text to execute any Helm chart. This can be used to retrieve secrets from the entire cluster."
-integrity: 
-  impact: "High"
-  description: "By default, tiller exposes its gRPC port inside the cluster, without authentication. Any pod in the cluster can request tiller to grant new ClusterRoles rights, which gives the pod more privileges inside the cluster."
-availability: 
-  impact: "High"
-  description: "With the ability to escalte privileges, tiller can be used to grant pods the ability to create and start many other pods."
-exploitability: 
-  impact: "Moderate"
-  description: ""
-attackVector: 
-  impact: "Remote"
-  description: ""
-scope: 
-  impact: "Cluster"
-  description: ""
-vector: ""
-baseScore: ""
-exploitabilityScore : ""
-impactScore : ""
+  impact: High
+  description: >-
+    By default, tiller v2 accepts unauthenticated gRPC connections in plain-text
+    to execute any Helm chart. This can be used to retrieve secrets from the
+    entire cluster.
+integrity:
+  impact: High
+  description: >-
+    By default, tiller exposes its gRPC port inside the cluster, without
+    authentication. Any pod in the cluster can request tiller to grant new
+    ClusterRoles rights, which gives the pod more privileges inside the cluster.
+scope:
+  impact: Cluster
+  description: ''
+  category: ''
+attackVector:
+  impact: Remote
+  description: ''
+vector: 'AV:N/S:C/C:H/I:H/A:H/E:M'
+exploitability:
+  impact: Moderate
+  description: ''
+baseScore: 3.7
+exploitabilitScore: 3.1
+score: 6.8
+risk: High

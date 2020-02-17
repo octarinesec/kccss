@@ -1,25 +1,36 @@
-name: "seccomp"
-type: "remediation"
-id: "R-1"
+name: seccomp
+type: remediation
+id: R-1
 revision: 1
-category: "Container"
-rule: ""
-title: "Seccomp"
-shortDescription: "Workload containers have seccomp policy"
-description: "Seccomp stands for Secure Computing mode - a seccomp policy can specify which system class can be called by the application. It is a sandboxing technique that reduces the chance that a kernel vulnerability will be successfully exploited."
-confidentiality: 
-  impact: "High"
-  description: "A seccomp policy can prevent malicious programs to use kernel exploits to break out of the container."
+category: ''
+rule: ''
+title: Seccomp
+description: >-
+  Seccomp stands for Secure Computing mode - a seccomp policy can specify which
+  system class can be called by the application. It is a sandboxing technique
+  that reduces the chance that a kernel vulnerability will be successfully
+  exploited.
+shortDescription: Workload containers have seccomp policy
+availability:
+  impact: High
+  description: >-
+    A seccomp policy can be used to restrict the system calls and prevent
+    processes from grabbing additional CPU or memory resources.
+confidentiality:
+  impact: High
+  description: >-
+    A seccomp policy can prevent malicious programs to use kernel exploits to
+    break out of the container.
 integrity:
-  impact: "High"
-  description: "A seccomp policy can prevent malicious programs to use kernel exploits to break out of the container."
-availability: 
-  impact: "High"
-  description: "A seccomp policy can be used to restrict the system calls and prevent processes from grabbing additional CPU or memory resources."
+  impact: High
+  description: >-
+    A seccomp policy can prevent malicious programs to use kernel exploits to
+    break out of the container.
+scope:
+  impact: Host
+  description: ''
+  category: Workload Isolation
 attackVector:
-  impact: "Local"
-  description: ""
-scope: 
-  impact: "Host"
-  category: "Workload Isolation"
-vector: "MC:H/MI:H/MA:H/AV:L/S:H"
+  impact: Local
+  description: ''
+vector: 'AV:L/S:H/C:H/I:H/A:H'

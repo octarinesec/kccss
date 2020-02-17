@@ -1,25 +1,29 @@
-name: "ReadOnlyFileSystem"
-type: "remediation"
-id: "R-6"
+name: ReadOnlyFileSystem
+type: remediation
+id: R-6
 revision: 1
-category: "Containers"
-rule: ""
-title: "Read-only File System"
-shortDescription: "The file system is mounted as read-only."
-description: "Containers with read-only file system makes it harder for attackers to exploit a vulnerable container: additional external tools and scripts cannot be saved locally to be run alter."
-confidentiality: 
-  impact: "Low"
-  description: "Downloading and running tools to gather secrets is harder."
+category: ''
+rule: ''
+title: Read-only File System
+description: >-
+  Containers with read-only file system makes it harder for attackers to exploit
+  a vulnerable container: additional external tools and scripts cannot be saved
+  locally to be run alter.
+shortDescription: The file system is mounted as read-only.
+availability:
+  impact: Low
+  description: Downloading and running tools to DoS other containers is harder.
+confidentiality:
+  impact: Low
+  description: Downloading and running tools to gather secrets is harder.
 integrity:
-  impact: "Low"
-  description: "Downloading and running tools to attack other containers is harder."
-availability: 
-  impact: "Low"
-  description: "Downloading and running tools to DoS other containers is harder."
+  impact: Low
+  description: Downloading and running tools to attack other containers is harder.
+scope:
+  impact: Container
+  description: ''
+  category: All
 attackVector:
-  impact: "Local"
-  description: ""
-scope: 
-  impact: "None"
-  category: "All"
-vector: ""
+  impact: Local
+  description: ''
+vector: 'AV:L/S:N/C:L/I:L/A:L'

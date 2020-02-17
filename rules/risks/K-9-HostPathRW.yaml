@@ -1,31 +1,44 @@
-name: "CPUMemoryQuota"
-type: "risk"
-id: "K-9"
+name: CPUMemoryQuota
+type: risk
+id: K-9
 revision: 1
-category: "Workload"
-rule: ""
-title: "Workload is mounting a volume with OS Directory write permissions"
-description: "Containers can mount sensitive folders from the hosts, giving them potentially dangerous access to critical host configurations and binaries."
+category: ''
+rule: ''
+title: Workload is mounting a volume with OS Directory write permissions
+description: >-
+  Containers can mount sensitive folders from the hosts, giving them potentially
+  dangerous access to critical host configurations and binaries.
+shortDescription: ''
+availability:
+  impact: Low
+  description: >-
+    Sharing sensitive folders and files, such as / (root), /var/run/,
+    docker.sock, etc. can allow the container to reconfigure the container
+    quotas, run new container images, etc.
 confidentiality:
-  impact: "High"
-  description: "Sharing sensitive folders and files such as / (root), /var/run/, etc., can allow the container to communicate with other host applications, such as a database, which could expose sensitive information."
-integrity: 
-  impact: "High"
-  description: "Sharing sensitive folders and files, such as / (root), /var/run/, docker.sock, etc. can allow the container to reconfigure the Kubernetes clusters, run new container images, etc."
-availability: 
-  impact: "Low"
-  description: "Sharing sensitive folders and files, such as / (root), /var/run/, docker.sock, etc. can allow the container to reconfigure the container quotas, run new container images, etc."
-exploitability: 
-  impact: "Moderate"
-  description: ""
-attackVector: 
-  impact: "Local"
-  description: ""
-scope: 
-  impact: "Host"
-  category: "Workload Isolation,Secret Exposure"
-  description: ""
-vector: ""
-baseScore: ""
-exploitabilityScore : ""
-impactScore : ""
+  impact: High
+  description: >-
+    Sharing sensitive folders and files such as / (root), /var/run/, etc., can
+    allow the container to communicate with other host applications, such as a
+    database, which could expose sensitive information.
+integrity:
+  impact: High
+  description: >-
+    Sharing sensitive folders and files, such as / (root), /var/run/,
+    docker.sock, etc. can allow the container to reconfigure the Kubernetes
+    clusters, run new container images, etc.
+scope:
+  impact: Host
+  description: ''
+  category: 'Workload Isolation,Secret Exposure'
+attackVector:
+  impact: Local
+  description: ''
+vector: 'AV:L/S:H/C:H/I:H/A:L/E:M'
+exploitability:
+  impact: Moderate
+  description: ''
+baseScore: 3.4
+exploitabilitScore: 2
+score: 5.4
+risk: High

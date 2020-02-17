@@ -1,25 +1,36 @@
-name: "SELinuxAppArmor"
-type: "remediation"
-id: "R-2"
+name: SELinuxAppArmor
+type: remediation
+id: R-2
 revision: 1
-category: "Container"
-rule: ""
-title: "SELinux or AppArmor"
-shortDescription: "Workload containers have SELlinux or AppArmor enabled"
-description: "SELinux (RedHat-based distributions) and AppArmor (Debian-based distributions) provides access control policies that can be used to restrict how processes can communicate to improve the overall security posture of the container and host."
-confidentiality: 
-  impact: "High"
-  description: "The SELinux or AppArmor policy can be used to restrict what processes can read in each folder."
+category: ''
+rule: ''
+title: SELinux or AppArmor
+description: >-
+  SELinux (RedHat-based distributions) and AppArmor (Debian-based distributions)
+  provides access control policies that can be used to restrict how processes
+  can communicate to improve the overall security posture of the container and
+  host.
+shortDescription: Workload containers have SELlinux or AppArmor enabled
+availability:
+  impact: High
+  description: >-
+    The SELinux or AppArmor policy can be used to restrict the system calls and
+    prevent processes from grabbing additional CPU or memory resources.
+confidentiality:
+  impact: High
+  description: >-
+    The SELinux or AppArmor policy can be used to restrict what processes can
+    read in each folder.
 integrity:
-  impact: "High"
-  description: "The SELinux or AppArmor policy can be used to restrict what processes can write to disk and in what folders."
-availability: 
-  impact: "High"
-  description: "The SELinux or AppArmor policy can be used to restrict the system calls and prevent processes from grabbing additional CPU or memory resources."
+  impact: High
+  description: >-
+    The SELinux or AppArmor policy can be used to restrict what processes can
+    write to disk and in what folders.
+scope:
+  impact: Host
+  description: ''
+  category: Workload Isolation
 attackVector:
-  impact: "Local"
-  description: ""
-scope: 
-  impact: "Host"
-  category: "Workload Isolation"
-vector: ""
+  impact: Local
+  description: ''
+vector: 'AV:L/S:H/C:H/I:H/A:H'

@@ -1,25 +1,35 @@
-name: "EgressPolicy"
-type: "remediation"
-id: "R-4"
+name: EgressPolicy
+type: remediation
+id: R-4
 revision: 1
-category: "Network"
-rule: ""
-title: "Kuberentes Egress Policy set"
-shortDescription: "Workload has egress policy configured"
-description: "An ingress network policy can prevent a workload from being leveraged to perform lateral movement and data ex-filtration."
-confidentiality: 
-  impact: "High"
-  description: "A Kubernetes egress policy makes it harder for an attacker to exploit a vulnerable application or OS, or compromised third-party library, etc. to move laterally inside the cluster or exfiltrate confidential data."
+category: ''
+rule: ''
+title: Kuberentes Egress Policy set
+description: >-
+  An ingress network policy can prevent a workload from being leveraged to
+  perform lateral movement and data ex-filtration.
+shortDescription: Workload has egress policy configured
+availability:
+  impact: Low
+  description: >-
+    An egress policy makes it more difficult for a workload to be leveraged to
+    mount a DoS attack on other internal services in the cluster.
+confidentiality:
+  impact: High
+  description: >-
+    A Kubernetes egress policy makes it harder for an attacker to exploit a
+    vulnerable application or OS, or compromised third-party library, etc. to
+    move laterally inside the cluster or exfiltrate confidential data.
 integrity:
-  impact: "Low"
-  description: "An egress policy makes it harder to leverage a compromised workload to attack other services in the cluster."
-availability: 
-  impact: "Low"
-  description: "An egress policy makes it more difficult for a workload to be leveraged to mount a DoS attack on other internal services in the cluster."
+  impact: Low
+  description: >-
+    An egress policy makes it harder to leverage a compromised workload to
+    attack other services in the cluster.
+scope:
+  impact: Cluster
+  description: ''
+  category: Network Lateral Movement
 attackVector:
-  impact: "Remote"
-  description: ""
-scope: 
-  impact: "Cluster"
-  category: "Network Lateral Movement"
-vector: ""
+  impact: Remote
+  description: ''
+vector: 'AV:N/S:C/C:H/I:L/A:L'

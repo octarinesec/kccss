@@ -1,31 +1,44 @@
-name: "AllowedUnsafeSysctls"
-type: "risk"
-id: "K-7"
+name: AllowedUnsafeSysctls
+type: risk
+id: K-7
 revision: 1
-category: "Workload"
-rule: ""
-title: "Workload allows unsafe allocation of CPU resources"
-description: "A container with full access (unmasked) to the host’s /proc command is able to retrieve information about all the activities and users on that host. /proc/sys allows a privileged user to change the runtime kernel parameters and impact how resources are shared amongst containers."
+category: ''
+rule: ''
+title: Workload allows unsafe allocation of CPU resources
+description: >-
+  A container with full access (unmasked) to the host’s /proc command is able to
+  retrieve information about all the activities and users on that host.
+  /proc/sys allows a privileged user to change the runtime kernel parameters and
+  impact how resources are shared amongst containers.
+shortDescription: ''
+availability:
+  impact: High
+  description: >-
+    Sysctl is an interface that enables the container’s parameters to be
+    changed, which could allow the container to grab more CPU resources than
+    it’s allowed by its quota. This may starve other containers from CPU cycles,
+    compromising the operations of the container, host and even the entire
+    cluster.
 confidentiality:
-  impact: "None"
-  description: ""
-integrity: 
-  impact: "Low"
-  description: "Some of the sysctl interfaces allow the container to affect the performance of other containers and/or the host."
-availability: 
-  impact: "High"
-  description: "Sysctl is an interface that enables the container’s parameters to be changed, which could allow the container to grab more CPU resources than it’s allowed by its quota. This may starve other containers from CPU cycles, compromising the operations of the container, host and even the entire cluster."
-exploitability: 
-  impact: "Moderate"
-  description: ""
-attackVector: 
-  impact: "Local"
-  description: ""
-scope: 
-  impact: "Host"
-  category: "Workload Isolation"
-  description: ""
-vector: ""
-baseScore: ""
-exploitabilityScore : ""
-impactScore : ""
+  impact: None
+  description: ''
+integrity:
+  impact: Low
+  description: >-
+    Some of the sysctl interfaces allow the container to affect the performance
+    of other containers and/or the host.
+scope:
+  impact: Host
+  description: ''
+  category: Workload Isolation
+attackVector:
+  impact: Local
+  description: ''
+vector: 'AV:L/S:H/C:N/I:L/A:H/E:M'
+exploitability:
+  impact: Moderate
+  description: ''
+baseScore: 2.6
+exploitabilitScore: 2
+score: 4.6
+risk: Medium

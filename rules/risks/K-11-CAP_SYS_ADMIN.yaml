@@ -1,31 +1,44 @@
-name: "CAP_SYS_ADMIN"
-type: "risk"
-id: "K-11"
+name: CAP_SYS_ADMIN
+type: risk
+id: K-11
 revision: 1
-category: "Container"
-rule: ""
-title: "Workload has container/s with CAP_SYS_ADMIN capability"
-description: "CAP_SYS_ADMIN is the most privileged capability allowed, out of more than 150 privileged system calls available."
+category: ''
+rule: ''
+title: Workload has container/s with CAP_SYS_ADMIN capability
+description: >-
+  CAP_SYS_ADMIN is the most privileged capability allowed, out of more than 150
+  privileged system calls available.
+shortDescription: ''
+availability:
+  impact: Low
+  description: >-
+    CAP_SYS_ADMIN can be leveraged by a process to gain additional capabilities,
+    including the ability to grab more resources than it’s assigned by the
+    container.
 confidentiality:
-  impact: "High"
-  description: "CAP_SYS_ADMIN gives processes privileges equivalent to running as root. Processes in a container running as root may be able to escape their container and perform malicious actions on the host."
-integrity: 
-  impact: "Low"
-  description: "CAP_SYS_ADMIN gives processes privileges equivalent to running as root. Root processes that can escape the containers have the ability to read secrets from Kubernetes, Docker and other applications."
-availability: 
-  impact: "Low"
-  description: "CAP_SYS_ADMIN can be leveraged by a process to gain additional capabilities, including the ability to grab more resources than it’s assigned by the container."
-exploitability: 
-  impact: "Moderate"
-  description: ""
-attackVector: 
-  impact: "Local"
-  description: ""
-scope: 
-  impact: "Host"
-  category: "Workload Isolation"
-  description: ""
-vector: ""
-baseScore: ""
-exploitabilityScore : ""
-impactScore : ""
+  impact: High
+  description: >-
+    CAP_SYS_ADMIN gives processes privileges equivalent to running as root.
+    Processes in a container running as root may be able to escape their
+    container and perform malicious actions on the host.
+integrity:
+  impact: Low
+  description: >-
+    CAP_SYS_ADMIN gives processes privileges equivalent to running as root. Root
+    processes that can escape the containers have the ability to read secrets
+    from Kubernetes, Docker and other applications.
+scope:
+  impact: Host
+  description: ''
+  category: Workload Isolation
+attackVector:
+  impact: Local
+  description: ''
+vector: 'AV:L/S:H/C:H/I:L/A:L/E:M'
+exploitability:
+  impact: Moderate
+  description: ''
+baseScore: 2.9
+exploitabilitScore: 2
+score: 4.9
+risk: Medium

@@ -1,31 +1,45 @@
-name: "SharedHostPort"
-type: "risk"
-id: "K-15"
+name: SharedHostPort
+type: risk
+id: K-15
 revision: 1
-category: "Network"
-rule: ""
-title: "Workload is exposed through a shared host port"
-description: "This container setting binds the container listening port to the IP address of the host. This exposes the pod to adjacent networks and/or to the Internet.\nA host port is exposing the workload, making it accessible from other networks and the Internet."
+category: ''
+rule: ''
+title: Workload is exposed through a shared host port
+description: >-
+  This container setting binds the container listening port to the IP address of
+  the host. This exposes the pod to adjacent networks and/or to the Internet.
+
+  A host port is exposing the workload, making it accessible from other networks
+  and the Internet.
+shortDescription: ''
+availability:
+  impact: High
+  description: >-
+    Accidental exposure to the Internet can make the workload susceptible to DoS
+    attacks from random attackers.
 confidentiality:
-  impact: "High"
-  description: "This setting binds the workload listening IP address to the host IP, making the service accessible from other networks and/or from the Internet."
-integrity: 
-  impact: "Low"
-  description: "Services open to the Internet may be used to access unprotected services (move laterally) by leveraging remote code vulnerabilities, vulnerable third-party libraries or vulnerable OS services."
-availability: 
-  impact: "High"
-  description: "Accidental exposure to the Internet can make the workload susceptible to DoS attacks from random attackers."
-exploitability: 
-  impact: "Moderate"
-  description: ""
-attackVector: 
-  impact: "Remote"
-  description: ""
-scope: 
-  impact: "None"
-  category: "Network Exposure"
-  description: ""
-vector: ""
-baseScore: ""
-exploitabilityScore : ""
-impactScore : ""
+  impact: High
+  description: >-
+    This setting binds the workload listening IP address to the host IP, making
+    the service accessible from other networks and/or from the Internet.
+integrity:
+  impact: Low
+  description: >-
+    Services open to the Internet may be used to access unprotected services
+    (move laterally) by leveraging remote code vulnerabilities, vulnerable
+    third-party libraries or vulnerable OS services.
+scope:
+  impact: Container
+  description: ''
+  category: Network Exposure
+attackVector:
+  impact: Remote
+  description: ''
+vector: 'AV:N/S:N/C:H/I:L/A:H/E:M'
+exploitability:
+  impact: Moderate
+  description: ''
+baseScore: 0.8
+exploitabilitScore: 3.1
+score: 3.9
+risk: Medium

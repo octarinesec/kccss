@@ -9,7 +9,7 @@ shortDescription: "A listening port isn’t configured"
 description: "A workload with no listening service is not susceptible to remote networking attacks."
 confidentiality: 
   impact: "High"
-  description: "When there is no listening port configured, workloads are not accessible remotely and are less likely to be leveraged for lateral movement and data exfiltration."
+  description: "When there is no listening port configured, workloads are not accessible remotely and are less likely to be leveraged for lateral movement and data ex-filtration."
 integrity:
   impact: "High"
   description: "When there is no listening port, workloads with local vulnerabilities are less likely to be exploited."

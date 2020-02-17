@@ -19,5 +19,7 @@ availability:
 attackVector:
   impact: "Remote"
   description: ""
-scope: "None"
+scope: 
+  impact: "None"
+  category: "Network Lateral Movement,Secret Exposure"
 vector: ""

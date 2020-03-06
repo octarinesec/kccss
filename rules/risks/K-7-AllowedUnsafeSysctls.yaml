@@ -6,10 +6,7 @@ category: ''
 rule: ''
 title: Workload allows unsafe allocation of CPU resources
 description: >-
-  A container with full access (unmasked) to the host’s /proc command is able to
-  retrieve information about all the activities and users on that host.
-  /proc/sys allows a privileged user to change the runtime kernel parameters and
-  impact how resources are shared amongst containers.
+  Systctl is an interface to modify kernel parameters at runtime. Sysctl allows read and write access to the parameters under/proc/sys.
 shortDescription: ''
 availability:
   impact: High

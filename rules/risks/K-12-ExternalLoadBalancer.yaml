@@ -41,3 +41,6 @@ baseScore: 0.8
 exploitabilitScore: 3.1
 score: 3.9
 risk: Medium
+references:
+  Mitre:
+    Initial Access: External Remote Services

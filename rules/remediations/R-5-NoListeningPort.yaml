@@ -33,3 +33,7 @@ attackVector:
   impact: Remote
   description: ''
 vector: 'AV:N/S:N/C:H/I:H/A:H'
+references:
+  Mitre: 
+    Discovery: Remote Services
+    Lateral Movement: Exploitation of Remote Services

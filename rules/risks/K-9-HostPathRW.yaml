@@ -42,3 +42,8 @@ baseScore: 3.4
 exploitabilitScore: 2
 score: 5.4
 risk: High
+references:
+  Mitre:
+    Discovery: File and Directory Discovery
+    Persistence: File System Permissions Weakness
+    Defense Evasion: Delete Files

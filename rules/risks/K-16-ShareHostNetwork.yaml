@@ -44,3 +44,5 @@ score: 6.5
 risk: High
 references:
   cis: 5.2.4
+  Mitre:
+    Initial Access: External Remote Services

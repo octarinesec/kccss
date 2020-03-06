@@ -42,3 +42,5 @@ score: 3.4
 risk: Medium
 references:
   cis: 5.2.3
+  Mitre:
+    Privilege Escalation: Process Injection

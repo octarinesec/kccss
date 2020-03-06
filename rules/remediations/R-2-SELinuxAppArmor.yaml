@@ -36,3 +36,6 @@ attackVector:
 vector: 'AV:L/S:H/C:H/I:H/A:H'
 references:
   cis: 5.6.3
+  Mitre:
+    Privilege Escalation: Sudo
+    Defense Evasion: Bypass User Account Control

@@ -43,3 +43,6 @@ score: 5.9
 risk: High
 references:
   cis: 5.1.4
+  Mitre:
+    Privilege Escalation: Sudo
+    Defense Evasion: Bypass User Account Control

@@ -35,3 +35,7 @@ baseScore: 2.2
 exploitabilitScore: 0.5
 score: 2.7
 risk: Medium
+references:
+  Mitre:
+    Discovery: File and Directory Discovery
+    Defense Evasion: Delete Files

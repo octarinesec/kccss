@@ -36,3 +36,6 @@ baseScore: 2.2
 exploitabilitScore: 2
 score: 4.2
 risk: Medium
+references:
+  Mitre:
+    Impact: Resource Hijacking

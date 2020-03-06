@@ -39,3 +39,6 @@ baseScore: 2.6
 exploitabilitScore: 2
 score: 4.6
 risk: Medium
+references:
+  Mitre:
+    Privilege Escalation: Bypass User Account Control

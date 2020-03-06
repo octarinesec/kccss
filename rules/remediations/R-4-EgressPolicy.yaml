@@ -35,3 +35,7 @@ attackVector:
 vector: 'AV:N/S:C/C:H/I:L/A:L'
 references:
   cis: 5.3.2
+  Mitre: 
+    Discovery: Network Service Scanning
+    Lateral Movement: Exploitation of Remote Services
+    Exfiltration: Automated Exfiltration

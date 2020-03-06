@@ -42,3 +42,7 @@ baseScore: 2.9
 exploitabilitScore: 2
 score: 4.9
 risk: Medium
+references:
+  Mitre:
+    Privilege Escalation: Sudo
+    Defense Evasion: Bypass User Account Control

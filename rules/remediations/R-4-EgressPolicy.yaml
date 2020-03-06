@@ -33,3 +33,5 @@ attackVector:
   impact: Remote
   description: ''
 vector: 'AV:N/S:C/C:H/I:L/A:L'
+references:
+  cis: 5.3.2

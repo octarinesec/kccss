@@ -102,6 +102,7 @@ export class Rule {
     scope: Scope = {impact: scopeImpact.None, category: "", description: ""};
     attackVector: AttackVector = {impact: attackVector.Local, description: ""};
     vector: string = "";
+    references?: any;
     protected file : string = "";
 
     protected getImpact(doc: any) : Impact {
@@ -208,6 +209,9 @@ export class Rule {
         var object = this;
         delete object.file;
 
+        if (object.references == '')
+            delete object.references;
+
         const dump = yaml.safeDump(object);
 
         if (target == '') {
@@ -249,6 +253,7 @@ export class Risk extends Rule {
         this.exploitability = this.getExploitability(doc.exploitability);
         this.attackVector = this.getAttackVector(doc.attackVector);
         this.scope = this.getScope(doc.scope);
+        this.references = doc.references ? doc.references: '';
 
         this.validate();
 

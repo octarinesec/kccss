@@ -22,6 +22,7 @@ export class Remediation extends Rule {
         this.integrity = this.getImpact(doc.integrity);
         this.attackVector = this.getAttackVector(doc.attackVector);
         this.scope = this.getScope(doc.scope);
+        this.references = doc.references ? doc.references: '';
 
         this.validate();
 

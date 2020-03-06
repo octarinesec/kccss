@@ -6,7 +6,8 @@ const program = require('commander');
 program
   .option('-s, --save', 'Validate and save the update file')
   .option('-r, --risk', 'Validate Risks only')
-  .option('-e, --remediation', 'Validate Remediations only');
+  .option('-e, --remediation', 'Validate Remediations only')
+  .option('-d, --debug', 'Enable debug output');
 
 program.parse(process.argv);
 
@@ -26,6 +27,7 @@ var scanDir = function(base : string, callback : any) {
 // Validate risk rules
 if (program.risk || ! program.remediation) {
     scanDir('../rules/risks', (file: string) => {
+        if (program.debug) console.log(file);
         var risk = new Risk(file);
 
         var valid = risk.validate();

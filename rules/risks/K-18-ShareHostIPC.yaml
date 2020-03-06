@@ -40,3 +40,5 @@ baseScore: 2.9
 exploitabilitScore: 0.5
 score: 3.4
 risk: Medium
+references:
+  cis: 5.2.3

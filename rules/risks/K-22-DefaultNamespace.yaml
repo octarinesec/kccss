@@ -1,0 +1,46 @@
+name: DefaultNamespace
+type: risk
+id: K-22
+revision: 1
+category: ''
+rule: ''
+recommendation: "All workload definitions must include a namespace."
+title: Workload is in the default namesapce
+description: >-
+  Use namespaces to create boundaries between workloads such as network
+  policies, different RBAC and PodSecurityPolicy, etc. By default, workloads are
+  created in the namespace called 'default'. Workloads should be explictely
+  associated with a namespace with adequate restrictions.
+shortDescription: ''
+availability:
+  impact: Low
+  description: >-
+    Network policies leveraging namespaces can be used to isolate groups of
+    applications from each other, isolate risky workloads, etc.
+confidentiality:
+  impact: Low
+  description: >-
+    Namespaces are used to reduce the scope of RBAC pivileges such as access to
+    secrets, listing pods and their configuration, etc.
+integrity:
+  impact: Low
+  description: >-
+    Namespaces allow the separation of Kubernetes resources and restrict the
+    scope of user access.
+scope:
+  impact: Cluster
+  description: ''
+  category: K8s Privilege Escalation
+attackVector:
+  impact: Local
+  description: ''
+vector: 'AV:L/S:C/C:L/I:L/A:L/E:H'
+exploitability:
+  impact: High
+  description: ''
+baseScore: 2.1
+exploitabilitScore: 2.7
+score: 4.8
+risk: Medium
+references:
+  cis: 5.6.1

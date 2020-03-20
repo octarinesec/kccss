@@ -4,7 +4,6 @@ id: K-13
 revision: 1
 category: ''
 rule: ''
-recommendation: 'Avoid worker nodes with public IPs'
 title: Workload is exposed through a node port
 description: >-
   A node port is exposing the workload, making it accessible from other networks
@@ -38,6 +37,7 @@ vector: 'AV:N/S:N/C:H/I:L/A:H/E:M'
 exploitability:
   impact: Moderate
   description: ''
+recommendation: Avoid worker nodes with public IPs
 baseScore: 0.8
 exploitabilitScore: 3.1
 score: 3.9

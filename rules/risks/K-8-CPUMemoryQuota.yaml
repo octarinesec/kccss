@@ -4,12 +4,6 @@ id: K-8
 revision: 1
 category: ''
 rule: ''
-recommendation: 'In your workload YAML definition, add:
-  containers[].resources.limits.cpu: X  ("500m" or "1000m" for example)
-  Containers[].resources.limits.memory: Y (“512Mi” or “1Gi” for example)
-Create a LimitRange resource in all your namespaces:
-  limit.default.cpu: X
-  limit.default.memory: Y'
 title: Workload has a container which its CPU or Memory limit was not configured
 description: >-
   CPU and Memory quotas prevent container from grabbing too many resources from
@@ -38,6 +32,14 @@ vector: 'AV:L/S:H/C:N/I:N/A:H/E:M'
 exploitability:
   impact: Moderate
   description: ''
+recommendation: >-
+  In your workload YAML definition, add:  
+  containers[].resources.limits.cpu: X ("500m" or "1000m" for example)  
+  Containers[].resources.limits.memory: Y (“512Mi” or “1Gi” for example) 
+
+  Create a LimitRange resource in all your namespaces:  
+  limit.default.cpu: X
+  limit.default.memory: Y
 baseScore: 2.2
 exploitabilitScore: 2
 score: 4.2

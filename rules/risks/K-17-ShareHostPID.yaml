@@ -34,6 +34,7 @@ vector: 'AV:L/S:H/C:L/I:L/A:L/E:L'
 exploitability:
   impact: Low
   description: ''
+recommendation: ''
 baseScore: 2.1
 exploitabilitScore: 0.5
 score: 2.6

@@ -4,9 +4,6 @@ id: K-1
 revision: 1
 category: ''
 rule: ''
-recommendation: 'Enable only the capabilities you need, such as CAP-SYS-ADMIN, in your workload definition:
-    securityContext.capabilities.add [<specific capabilities>]
-'
 title: Workload is privileged
 description: >-
   Processes inside a privileged container will have full access to the host,
@@ -41,6 +38,9 @@ vector: 'AV:L/S:H/C:H/I:L/A:L/E:M'
 exploitability:
   impact: Moderate
   description: ''
+recommendation: >-
+  Enable only the capabilities you need, such as CAP-SYS-ADMIN, in your workload
+  definition: securityContext.capabilities.add [<specific capabilities>] 
 baseScore: 2.9
 exploitabilitScore: 2
 score: 4.9

@@ -4,10 +4,6 @@ id: K-12
 revision: 1
 category: ''
 rule: ''
-recommendation: 'Use an external Load Balancer providerd by your could provider:
-  GCP: cloud.google.com/load-balancer-type: "Internal"
-  AWS: service.beta.kubernetes.io/aws-load-balancer-internal: "true"
-  Azure: service.beta.kubernetes.io/azure-load-balancer-internal: "true"'
 title: Workload is exposed through an external load balancer
 description: >-
   An external load balancer is exposing the workload, making it accessible from
@@ -41,6 +37,14 @@ vector: 'AV:N/S:N/C:H/I:L/A:H/E:M'
 exploitability:
   impact: Moderate
   description: ''
+recommendation: >-
+  Use an external Load Balancer providerd by your could provider: 
+  
+  GCP: cloud.google.com/load-balancer-type: "Internal" 
+  
+  AWS: service.beta.kubernetes.io/aws-load-balancer-internal: "true" 
+  
+  Azure: service.beta.kubernetes.io/azure-load-balancer-internal: "true"
 baseScore: 0.8
 exploitabilitScore: 3.1
 score: 3.9

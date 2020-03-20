@@ -38,6 +38,7 @@ vector: 'AV:N/S:C/C:H/I:H/A:H/E:M'
 exploitability:
   impact: Moderate
   description: ''
+recommendation: ''
 baseScore: 3.7
 exploitabilitScore: 3.1
 score: 6.8

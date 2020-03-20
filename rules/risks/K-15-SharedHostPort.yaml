@@ -4,7 +4,6 @@ id: K-15
 revision: 1
 category: ''
 rule: ''
-recommendation: 'Use NodePort. Avoid worker nodes with public IPs'
 title: Workload is exposed through a shared host port
 description: >-
   This container setting binds the container listening port to the IP address of
@@ -40,6 +39,7 @@ vector: 'AV:N/S:N/C:H/I:L/A:H/E:M'
 exploitability:
   impact: Moderate
   description: ''
+recommendation: Use NodePort. Avoid worker nodes with public IPs
 baseScore: 0.8
 exploitabilitScore: 3.1
 score: 3.9

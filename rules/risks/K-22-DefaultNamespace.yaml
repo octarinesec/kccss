@@ -4,7 +4,6 @@ id: K-22
 revision: 1
 category: ''
 rule: ''
-recommendation: "All workload definitions must include a namespace."
 title: Workload is in the default namesapce
 description: >-
   Use namespaces to create boundaries between workloads such as network
@@ -38,6 +37,7 @@ vector: 'AV:L/S:C/C:L/I:L/A:L/E:H'
 exploitability:
   impact: High
   description: ''
+recommendation: All workload definitions must include a namespace.
 baseScore: 2.1
 exploitabilitScore: 2.7
 score: 4.8

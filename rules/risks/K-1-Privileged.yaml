@@ -4,6 +4,9 @@ id: K-1
 revision: 1
 category: ''
 rule: ''
+recommendation: 'Enable only the capabilities you need, such as CAP-SYS-ADMIN, in your workload definition:
+    securityContext.capabilities.add [<specific capabilities>]
+'
 title: Workload is privileged
 description: >-
   Processes inside a privileged container will have full access to the host,
@@ -44,7 +47,6 @@ score: 4.9
 risk: Medium
 references:
   cis: 5.2.1
-references:
   Mitre:
     Privilege Escalation: Sudo
     Defense Evasion: Bypass User Account Control

@@ -228,6 +228,7 @@ export class Rule {
 export class Risk extends Rule {
     type: string = 'risk';
     exploitability: Exploitability = {impact: exploitabilityImpact.VeryLow, description: ""};
+    recommendation: string = '';
     
     baseScore: number = 0;
     exploitabilitScore: number = 0;
@@ -253,7 +254,8 @@ export class Risk extends Rule {
         this.exploitability = this.getExploitability(doc.exploitability);
         this.attackVector = this.getAttackVector(doc.attackVector);
         this.scope = this.getScope(doc.scope);
-        this.references = doc.references ? doc.references: '';
+        this.references = doc.references ? doc.references : '';
+        this.recommendation = doc.recommendation ? doc.recommendation : '';
 
         this.validate();
 

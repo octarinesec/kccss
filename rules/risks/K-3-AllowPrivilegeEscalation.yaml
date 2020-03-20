@@ -4,6 +4,10 @@ id: K-3
 revision: 1
 category: ''
 rule: ''
+recommendation: 'In your workload YAML definition, add:
+  securityContext.AllowPrivilegeEscalation: false
+To change default value, add this to your PodSecurityPolicy:
+  PodSecurityPolicy defaultAllowPrivilegeEscalation: false'
 title: Workload allows privilege escalation
 description: >-
   Privilege escalation allows programs inside the container to run as root, even

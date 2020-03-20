@@ -4,6 +4,9 @@ id: K-9
 revision: 1
 category: ''
 rule: ''
+recommendation: 'Change the hsot path to read-only in your workload ddefinition file:
+  containers[].volumeMounts[].readOnly: true
+'
 title: Workload is mounting a volume with OS Directory write permissions
 description: >-
   Containers can mount sensitive folders from the hosts, giving them potentially

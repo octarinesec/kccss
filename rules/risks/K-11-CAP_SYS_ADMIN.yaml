@@ -4,6 +4,9 @@ id: K-11
 revision: 1
 category: ''
 rule: ''
+recommendation: 'Enable only the capabilities you need, such as CAP-SYS-ADMIN, in your workload definition:
+    securityContext.capabilities.add [<specific capabilities>]
+'
 title: Workload has container/s with CAP_SYS_ADMIN capability
 description: >-
   CAP_SYS_ADMIN is the most privileged capability allowed, out of more than 150

@@ -4,6 +4,12 @@ id: K-2
 revision: 1
 category: ''
 rule: ''
+recommendation: "In your workload YAML definition, make sure at least one of these settings is set:
+  securityContext.runAsUser > 0  (we suggest any value greater than 5000)
+  securityContext.runAsNonRoot: true
+
+To change the default value, add this to your PodSecurityPolicy:
+ rule: 'MustRunAsNonRoot'"
 title: Workload has a container(s) running as root
 description: >-
   Processes inside a container running as root may be able to escape that

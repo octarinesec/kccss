@@ -4,6 +4,12 @@ id: K-4
 revision: 1
 category: ''
 rule: ''
+recommendation: "In your workload YAML definition, add:
+  securityContext.capabilities.drop
+    - NET_RAW
+To change the default list of capabilities, add this to your PodSecurityPolicy:
+  requiredDropCapabilities:
+    - ALL"
 title: Workload has a container(s) with NET_RAW capability
 description: >-
   The capability NET_RAW allows the container to craft any packet, including

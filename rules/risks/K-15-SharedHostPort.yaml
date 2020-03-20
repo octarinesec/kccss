@@ -4,6 +4,7 @@ id: K-15
 revision: 1
 category: ''
 rule: ''
+recommendation: 'Use NodePort. Avoid worker nodes with public IPs'
 title: Workload is exposed through a shared host port
 description: >-
   This container setting binds the container listening port to the IP address of

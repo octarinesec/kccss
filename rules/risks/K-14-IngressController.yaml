@@ -10,12 +10,12 @@ description: >-
   other networks and the Internet.
 shortDescription: ''
 availability:
-  impact: High
+  impact: Low
   description: >-
     Accidental exposure to the Internet can make the workload susceptible to DoS
     attacks from random attackers.
 confidentiality:
-  impact: High
+  impact: Low
   description: >-
     Accidental exposure of sensitive services may lead to the exfiltration of
     confidential data through remote code vulnerabilities, vulnerable
@@ -41,6 +41,6 @@ baseScore: 0.8
 exploitabilitScore: 3.1
 score: 3.9
 risk: Medium
-references
+references:
   Mitre:
     Initial Access: External Remote Services

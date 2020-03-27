@@ -36,7 +36,7 @@ vector: 'AV:L/S:C/C:L/I:L/A:L/E:H'
 exploitability:
   impact: High
   description: ''
-recommendation: 'Create a unique Service Account Token per workload.'
+recommendation: Create a unique Service Account Token per workload.
 baseScore: 2.1
 exploitabilitScore: 2.7
 score: 4.8

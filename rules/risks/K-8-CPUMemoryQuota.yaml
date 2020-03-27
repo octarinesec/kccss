@@ -28,21 +28,20 @@ scope:
 attackVector:
   impact: Local
   description: ''
-vector: 'AV:L/S:H/C:N/I:N/A:H/E:M'
+vector: 'AV:L/S:H/C:N/I:N/A:H/E:H'
 exploitability:
-  impact: Moderate
+  impact: High
   description: ''
 recommendation: >-
-  In your workload YAML definition, add:  
-  containers[].resources.limits.cpu: X ("500m" or "1000m" for example)  
-  Containers[].resources.limits.memory: Y (“512Mi” or “1Gi” for example) 
+  In your workload YAML definition, add:   containers[].resources.limits.cpu: X
+  ("500m" or "1000m" for example)   Containers[].resources.limits.memory: Y
+  (“512Mi” or “1Gi” for example) 
 
-  Create a LimitRange resource in all your namespaces:  
-  limit.default.cpu: X
+  Create a LimitRange resource in all your namespaces:   limit.default.cpu: X
   limit.default.memory: Y
 baseScore: 2.2
-exploitabilitScore: 2
-score: 4.2
+exploitabilitScore: 2.7
+score: 4.9
 risk: Medium
 references:
   Mitre:

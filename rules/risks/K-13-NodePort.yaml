@@ -33,14 +33,14 @@ scope:
 attackVector:
   impact: Remote
   description: ''
-vector: 'AV:N/S:N/C:H/I:L/A:H/E:M'
+vector: 'AV:N/S:N/C:H/I:L/A:H/E:H'
 exploitability:
-  impact: Moderate
+  impact: High
   description: ''
 recommendation: Avoid worker nodes with public IPs
 baseScore: 0.8
-exploitabilitScore: 3.1
-score: 3.9
+exploitabilitScore: 4.1
+score: 4.9
 risk: Medium
 references:
   Mitre:

@@ -34,17 +34,17 @@ scope:
 attackVector:
   impact: Local
   description: ''
-vector: 'AV:L/S:H/C:H/I:L/A:L/E:M'
+vector: 'AV:L/S:H/C:H/I:L/A:L/E:H'
 exploitability:
-  impact: Moderate
+  impact: High
   description: ''
 recommendation: >-
   Enable only the capabilities you need, such as CAP-SYS-ADMIN, in your workload
   definition: securityContext.capabilities.add [<specific capabilities>] 
 baseScore: 2.9
-exploitabilitScore: 2
-score: 4.9
-risk: Medium
+exploitabilitScore: 2.7
+score: 5.6
+risk: High
 references:
   cis: 5.2.1
   Mitre:

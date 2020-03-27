@@ -34,15 +34,15 @@ scope:
 attackVector:
   impact: Remote
   description: ''
-vector: 'AV:N/S:H/C:H/I:L/A:H/E:M'
+vector: 'AV:N/S:H/C:H/I:L/A:H/E:L'
 exploitability:
-  impact: Moderate
+  impact: Low
   description: ''
 recommendation: ''
 baseScore: 3.4
-exploitabilitScore: 3.1
-score: 6.5
-risk: High
+exploitabilitScore: 0.8
+score: 4.2
+risk: Medium
 references:
   cis: 5.2.4
   Mitre:

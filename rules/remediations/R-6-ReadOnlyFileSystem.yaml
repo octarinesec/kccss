@@ -6,9 +6,9 @@ category: ''
 rule: ''
 title: Read-only File System
 description: >-
-  Containers with read-only file system makes it harder for attackers to exploit
+  Containers with read-only file system make it harder for attackers to exploit
   a vulnerable container: additional external tools and scripts cannot be saved
-  locally to be run alter.
+  locally to be run later.
 shortDescription: The file system is mounted as read-only.
 availability:
   impact: Low

@@ -39,7 +39,7 @@ exploitability:
   impact: Moderate
   description: ''
 recommendation: >-
-  Change the host path to read-only in your workload ddefinition file:
+  Change the host path to read-only in your workload definition file:
   containers[].volumeMounts[].readOnly: true 
 baseScore: 3.4
 exploitabilitScore: 2

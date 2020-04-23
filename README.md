@@ -29,6 +29,6 @@ We have additional documentation in the[wiki](https://github.com/octarinesec/kcc
 
 # Try KCCSS with kube-scan
 
-[kube-scan](https://github.com/octarinesec/kube-scan) is now open-source and has been updated to include all the KCCSS rules. It’s the easiest way to run KCCSS on your clusters to identify your most risky workloads. Check out the [github page]((https://github.com/octarinesec/kube-scan) to download the latest version and install it today.
+[kube-scan](https://github.com/octarinesec/kube-scan) is now open-source and has been updated to include all the KCCSS rules. It’s the easiest way to run KCCSS on your clusters to identify your most risky workloads. Check out the [github page](https://github.com/octarinesec/kube-scan) to download the latest version and install it today.
 
 ![KCCSS rule in kube-scan](https://cdn2.hubspot.net/hubfs/5802044/risk-expanded.png)

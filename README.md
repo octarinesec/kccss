@@ -2,7 +2,7 @@
 
 With over 30 security settings under the control of every single developer, you need to be a Kubernetes expert to understand if the final configuration introduces a high risk to your cluster. With a single change to a single file you can open your entire Kubernetes cluster to privilege escalations, attacks, leak secrets, risk confidential data, or accidentally give public access to private services. 
 
-KCCSS is a framework for rating security risks associated with misconfigurations. [kube-scan](https://github.com/octarinesec/kube-scan) is a workload and assessment tool that is based on KCCSS and scans Kubernetes configurations and settings to identify and rank potential vulnerabilities in applications within minutes. 
+KCCSS is a framework for rating security risks associated with misconfigurations. 
 
 # A standard way to determine risky workloads due to configs
 
@@ -25,10 +25,4 @@ KCCSS makes it easy to talk about security across teams in your organization. De
 
 We designed KCCSS to be easily expanded by others, whether they are security vendors, open-source developers or Kubernetes users. You can easily add rules to represent risks or remediations brought by different Kubernetes tools and services to ensure you have a comprehensive view of your security posture. We welcome all contributions from the community and other vendors, so please join us to make improvements to existing rules, create new generic Kubernetes rules, vendors rules, etc.
 
-We have additional documentation in the[wiki](https://github.com/octarinesec/kccss/wiki) that explains how the rules are created, the meaning of the different fields and the formula to compute each score. We will be adding more tools and more documentation in the coming days.
-
-# Try KCCSS with kube-scan
-
-[kube-scan](https://github.com/octarinesec/kube-scan) is now open-source and has been updated to include all the KCCSS rules. It’s the easiest way to run KCCSS on your clusters to identify your most risky workloads. Check out the [github page](https://github.com/octarinesec/kube-scan) to download the latest version and install it today.
-
-![KCCSS rule in kube-scan](https://cdn2.hubspot.net/hubfs/5802044/risk-expanded.png)
+We have additional documentation in the [wiki](https://github.com/octarinesec/kccss/wiki) that explains how the rules are created, the meaning of the different fields and the formula to compute each score. We will be adding more tools and more documentation in the coming days.

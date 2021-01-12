@@ -39,8 +39,8 @@ exploitability:
   description: ''
 recommendation: >-
   Ensure that your RBAC Role/ClusterRole does not give broad access to pods:
-  rules.resources [specific resources, do not include pods]  rules.verbs
-  [specific verbs, do not include create/delete]
+  rules.resources [specific resources, do not include pods]  
+  rules.verbs [specific verbs, do not include create/delete]
 baseScore: 3.2
 exploitabilitScore: 2.7
 score: 5.9

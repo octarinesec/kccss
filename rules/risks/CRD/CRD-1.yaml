@@ -1,0 +1,32 @@
+name: CRD
+type: risk
+id: CRD-1
+revision: 1
+category: ''
+rule: ''
+title: A Custom CRD is deployed
+description: >-
+  Customs Resource Definitions (CRDs) are custom Kubernetes resources that are available through the Kubernetes API. 
+  They can be used to share information about workloads or to control applications.
+shortDescription: ''
+availability:
+  impact: None
+  description: 
+confidentiality:
+  impact: High
+  description: >-
+    CRDs should not be used to store secrets or any kind of confidential information.
+integrity:
+  impact: None
+  description:
+scope:
+  impact: Cluster
+  description: ''
+  category: ''
+attackVector:
+  impact: Local
+  description: ''
+exploitability:
+  impact: Moderate
+  description: ''
+remediation: 'Use config files tha are restricted to workloads who need tpo access them. If the use of CRD is required, ensure taht proper RBAC controls are in place.'

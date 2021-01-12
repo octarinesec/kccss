@@ -1,0 +1,33 @@
+name: PersistentVolume
+type: risk
+id: K-24
+revision: 1
+category: ''
+rule: ''
+title: Workload uses a persistent volume
+description: >-
+  Workloads can mount a persistent volume to read and write data that will remain after the workload has been brought down.
+shortDescription: ''
+availability:
+  impact: None
+  description:
+confidentiality:
+  impact: Low
+  description: >-
+    A rogue container can mount persistent volumes used by other worklaods to try to extract secrets and other confidential information. 
+integrity:
+  impact: High
+  description: >-
+    A compromised container can leverage a persistent volume to make a threat permanent and run malicious code after a workload is restarted. 
+scope:
+  impact: Container
+  description: ''
+  category: Workload Isolation
+attackVector:
+  impact: Local
+  description: >-
+    A malicious  process or application can compromise files on the persistent volume to be able to restart after a workload is started by Kubernetes.
+exploitability:
+  impact: Moderate
+  description: ''
+remediation: 'Restrict access to persistent volumens through RBAC. Use encrypted volumesto prevent unauthrorized volumes to access files.'

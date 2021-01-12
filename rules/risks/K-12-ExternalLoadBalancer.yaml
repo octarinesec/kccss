@@ -38,7 +38,7 @@ exploitability:
   impact: High
   description: ''
 recommendation: |-
-  Use an external Load Balancer providerd by your could provider: 
+  Use an external Load Balancer provider by your cloud provider: 
   GCP: cloud.google.com/load-balancer-type: "Internal" 
   AWS: service.beta.kubernetes.io/aws-load-balancer-internal: "true" 
   Azure: service.beta.kubernetes.io/azure-load-balancer-internal: "true"

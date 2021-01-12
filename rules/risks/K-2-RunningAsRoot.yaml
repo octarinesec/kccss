@@ -42,8 +42,8 @@ recommendation: >-
   set: securityContext.runAsUser > 0  (we suggest any value greater than 5000)
   securityContext.runAsNonRoot: true
 
-  To change the default value, add this to your PodSecurityPolicy: rule:
-  'MustRunAsNonRoot'
+  To change the default value, add this to your PodSecurityPolicy: 
+  rule: 'MustRunAsNonRoot'
 baseScore: 2.9
 exploitabilitScore: 0.5
 score: 3.4

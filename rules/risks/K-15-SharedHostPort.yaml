@@ -8,9 +8,6 @@ title: Workload is exposed through a shared host port
 description: >-
   This container setting binds the container listening port to the IP address of
   the host. This exposes the pod to adjacent networks and/or to the Internet.
-
-  A host port is exposing the workload, making it accessible from other networks
-  and the Internet.
 shortDescription: ''
 availability:
   impact: High
@@ -39,7 +36,7 @@ vector: 'AV:N/S:N/C:H/I:L/A:H/E:M'
 exploitability:
   impact: Moderate
   description: ''
-recommendation: Use NodePort. Avoid worker nodes with public IPs
+recommendation: Use NodePort. Avoid worker nodes with public IPs.
 baseScore: 0.8
 exploitabilitScore: 3.1
 score: 3.9

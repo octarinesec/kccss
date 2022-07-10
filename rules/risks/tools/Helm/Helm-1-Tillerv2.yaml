@@ -8,7 +8,7 @@ title: Tiller v2 is deployed
 description: >-
   Helm v2 includes a workload, Tiller, that is used to execute Helm charts.
   Tillers has no authentication enabled by default. Tiller can execute any
-  command, such as granting new ClusterRoles rights to amy pod.
+  command, such as granting new ClusterRoles rights to any pod.
 shortDescription: ''
 availability:
   impact: High

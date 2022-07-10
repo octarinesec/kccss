@@ -6,7 +6,7 @@ category: ''
 rule: ''
 title: Kuberentes Egress Policy set
 description: >-
-  An ingress network policy can prevent a workload from being leveraged to
+  An egress network policy can prevent a workload from being leveraged to
   perform lateral movement and data ex-filtration.
 shortDescription: Workload has egress policy configured
 availability:

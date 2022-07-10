@@ -29,4 +29,4 @@ attackVector:
 exploitability:
   impact: Moderate
   description: ''
-remediation: 'Use config files that are restricted to workloads who need to access them. If the use of CRD is required, ensure taht proper RBAC controls are in place.'
+remediation: 'Use config files that are restricted to workloads who need to access them. If the use of CRD is required, ensure that proper RBAC controls are in place.'
